@@ -24,3 +24,7 @@ home.packages = with pkgs; [
 
 If you want to see a whole flake structure that implements the fabric features, check out [this repo](https://github.com/HeyImKyu/fabric-flakes-example)
 
+### Warning
+
+This was at the time built and test with nixos-unstable version, which at the time would have been 25.05.
+Some packages might not be available in previous versions.
