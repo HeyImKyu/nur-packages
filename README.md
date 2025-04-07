@@ -22,3 +22,5 @@ home.packages = with pkgs; [
 ];
 ```
 
+If you want to see a whole flake structure that implements the fabric features, check out [this repo](https://github.com/HeyImKyu/fabric-flakes-example)
+
