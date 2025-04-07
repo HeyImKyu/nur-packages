@@ -24,7 +24,7 @@ let
     ++ extraPythonPackages
   );
 in
-stdenv.mkDerivation rec {
+stdenv.mkDerivation {
   pname = "run-widget";
   version = "0.0.2";
 

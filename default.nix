@@ -9,7 +9,7 @@
 { pkgs ? import <nixpkgs> { } }:
 
 let
-  python-fabric = pkgs.callPackage ./pkgs/fabric/python-fabric {};
+  python-fabric = pkgs.callPackage ./pkgs/fabric/python-fabric { };
 in
 {
   # The `lib`, `modules`, and `overlays` names are special
