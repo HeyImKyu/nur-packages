@@ -11,6 +11,7 @@
   gnome-bluetooth,
   cinnamon-desktop,
   librsvg,
+  python-fabric,
   extraPythonPackages ? [],
   extraBuildInputs ? [],
   fetchFromGitHub,
@@ -26,8 +27,8 @@ let
       pygobject3
       loguru
       psutil
+      python-fabric
       pygobject-stubs
-      python
     ]
     ++ extraPythonPackages
   );
