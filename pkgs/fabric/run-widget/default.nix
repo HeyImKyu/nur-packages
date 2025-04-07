@@ -2,16 +2,8 @@
   lib,
   python3,
   stdenv,
-  gtk3,
-  gtk-layer-shell,
-  cairo,
-  gobject-introspection,
-  libdbusmenu-gtk3,
-  gdk-pixbuf,
-  gnome-bluetooth,
-  cinnamon-desktop,
-  librsvg,
   python-fabric,
+  pkgs,
   extraPythonPackages ? [],
   extraBuildInputs ? [],
   ...
@@ -36,7 +28,7 @@ stdenv.mkDerivation rec {
   pname = "run-widget";
   version = "0.0.2";
 
-  propagatedBuildInputs = [
+  propagatedBuildInputs = with pkgs; [
     gtk3
     gtk-layer-shell
     cairo

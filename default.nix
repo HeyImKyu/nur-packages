@@ -18,6 +18,6 @@ in
   overlays = import ./overlays; # nixpkgs overlays
 
   fabric-cli = pkgs.callPackage ./pkgs/fabric/fabric-cli { };
-  fabric-gray = pkgs.callPackage ./pkgs/fabric/gray { };
-  run-widget = pkgs.callPackage ./pkgs/fabric/run-widget { inherit python-fabric; };
+  fabric-gray = pkgs.callPackage ./pkgs/fabric/gray { inherit pkgs; };
+  run-widget = pkgs.callPackage ./pkgs/fabric/run-widget { inherit python-fabric; inherit pkgs; };
 }

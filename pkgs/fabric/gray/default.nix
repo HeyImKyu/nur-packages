@@ -1,19 +1,12 @@
 {
   lib,
   stdenv,
-  gobject-introspection,
-  meson,
-  pkg-config,
-  ninja,
-  vala,
-  glib,
-  libdbusmenu-gtk3,
-  gtk3,
+  pkgs,
   fetchFromGitHub,
   ...
 }:
 
-stdenv.mkDerivation rec {
+stdenv.mkDerivation {
   pname = "libgray";
   version = "0.1";
 
@@ -24,7 +17,7 @@ stdenv.mkDerivation rec {
     hash = "sha256-s9v9fkp+XrKqY81Z7ezxMikwcL4HHS3KvEwrrudJutw=";  # You'll need to add the correct hash
   };
 
-  nativeBuildInputs = [
+  nativeBuildInputs = with pkgs; [
     gobject-introspection
     meson
     pkg-config
@@ -32,7 +25,7 @@ stdenv.mkDerivation rec {
     vala
   ];
 
-  buildInputs = [
+  buildInputs = with pkgs; [
     glib
     libdbusmenu-gtk3
     gtk3

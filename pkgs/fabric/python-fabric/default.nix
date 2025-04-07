@@ -1,14 +1,7 @@
 {
   lib,
   python312Packages,
-  gtk3,
-  gtk-layer-shell,
-  cairo,
-  gobject-introspection,
-  libdbusmenu-gtk3,
-  gdk-pixbuf,
-  cinnamon-desktop,
-  gnome-bluetooth,
+  pkgs,
   fetchFromGitHub,
   ...
 }:
@@ -25,7 +18,7 @@ python312Packages.buildPythonPackage {
     hash = "sha256-+Hg9ZA0otWlg4P40UeI+slcK732BmYtnM8amxsCh6EY=";
   };
 
-  buildInputs = [
+  buildInputs = with pkgs; [
     gtk3
     gtk-layer-shell
     cairo
