@@ -14,7 +14,6 @@
   python-fabric,
   extraPythonPackages ? [],
   extraBuildInputs ? [],
-  fetchFromGitHub,
   ...
 }:
 

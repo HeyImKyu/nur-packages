@@ -46,10 +46,14 @@ python312Packages.buildPythonPackage {
     psutil
   ];
 
-  meta = with lib; {
-    description = "next-gen framework for building desktop widgets using Python";
+  meta = {
+    description = "Next-gen framework for building desktop widgets using Python";
+    longDescription = ''
+      This is the python package for fabric.
+      In this context it is only used for inclusion in the run-widget flake.
+    '';
     homepage = "https://github.com/Fabric-Development/fabric";
-    license = licenses.agpl3Plus;
+    license = lib.licenses.agpl3Plus;
     maintainers = [
       {
         email = "heyimkyu@mailbox.org";

@@ -4,6 +4,7 @@
   lib,
   ...
 }:
+
 buildGoModule {
   pname = "fabric-cli";
   version = "0.0.2";
@@ -20,7 +21,8 @@ buildGoModule {
   meta = {
     description = "An alternative super-charged CLI for Fabric ";
     longDescription = ''
-      Fabric CLI is a tool to interface with running fabric instances. This enables e.g. invoking actions or executing python code within a running instance.
+      Fabric CLI is a tool to interface with running fabric instances.
+      This enables e.g. invoking actions or executing python code within a running instance.
     '';
     homepage = "https://github.com/Fabric-Development/fabric-cli";
     license = lib.licenses.agpl3Only;
