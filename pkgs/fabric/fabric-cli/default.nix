@@ -1,9 +1,9 @@
-{ buildGoModule
-, fetchFromGitHub
-, lib
-, ...
+{
+  buildGoModule,
+  fetchFromGitHub,
+  lib,
+  ...
 }:
-
 buildGoModule {
   pname = "fabric-cli";
   version = "0.0.2";

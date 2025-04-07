@@ -15,4 +15,5 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   fabric-cli = pkgs.callPackage ./pkgs/fabric/fabric-cli { };
+  fabric-libgray = pkgs.callPackage ./pkgs/fabric/gray { };
 }
