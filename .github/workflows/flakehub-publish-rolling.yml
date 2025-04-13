@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - "main"
+      - "flakehub-test"
   workflow_dispatch:
 jobs:
   flakehub-publish:
