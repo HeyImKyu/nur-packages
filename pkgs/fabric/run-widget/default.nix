@@ -52,7 +52,6 @@ stdenv.mkDerivation {
     ${python.interpreter} "\$@"
     EOF
     chmod +x $out/bin/run-widget
-    echo "did all the things i had to do ^-^"
   '';
 
   meta = {

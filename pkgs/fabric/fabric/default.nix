@@ -39,10 +39,6 @@ python312Packages.buildPythonPackage {
     psutil
   ];
 
-  propagatedBuildInputs = with python312Packages; [
-    setuptools
-  ];
-
   meta = {
     description = "Next-gen framework for building desktop widgets using Python";
     longDescription = ''
