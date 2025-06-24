@@ -18,8 +18,8 @@ let
       pygobject3
       loguru
       psutil
-      fabric
       pygobject-stubs
+      fabric
     ]
     ++ extraPythonPackages
   );
