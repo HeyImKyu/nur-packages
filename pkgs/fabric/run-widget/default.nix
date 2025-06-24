@@ -2,7 +2,7 @@
   lib,
   python3,
   stdenv,
-  python-fabric,
+  fabric,
   pkgs,
   extraPythonPackages ? [],
   extraBuildInputs ? [],
@@ -18,7 +18,7 @@ let
       pygobject3
       loguru
       psutil
-      python-fabric
+      fabric
       pygobject-stubs
     ]
     ++ extraPythonPackages
@@ -26,7 +26,7 @@ let
 in
 stdenv.mkDerivation {
   pname = "run-widget";
-  version = "0.0.2";
+  version = "0.0.3";
 
   propagatedBuildInputs = with pkgs; [
     gtk3
@@ -52,6 +52,7 @@ stdenv.mkDerivation {
     ${python.interpreter} "\$@"
     EOF
     chmod +x $out/bin/run-widget
+    echo "did all the things i had to do ^-^"
   '';
 
   meta = {

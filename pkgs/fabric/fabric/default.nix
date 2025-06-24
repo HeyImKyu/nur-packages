@@ -7,8 +7,8 @@
 }:
 
 python312Packages.buildPythonPackage {
-  pname = "python-fabric";
-  version = "0.0.2";
+  pname = "fabric";
+  version = "0.0.3";
   pyproject = true;
 
   src = fetchFromGitHub {
